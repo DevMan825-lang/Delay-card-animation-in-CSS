@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 35px; 
+    opacity: .9;
+    animation: fade-in 2s ease-in-out; 
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: .9;
+    }
+}
+.card{
+    width: 280px; 
+    height: 400px; 
+    background-color: hsl(0,0%,94%);
+    box-shadow: 0 4px 6px rgba(0,0,0,.4), 0 4px 8px rgba(0,0,0,.18);
+}
+img{
+    width: 280px; 
+    height: 350px; 
+    object-fit: cover;
+}
+pre{
+    margin-left: 12px; 
+}
